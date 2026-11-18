@@ -304,7 +304,8 @@ def master_function(file_path, fidelity):
         fidelity = "50m"
     elif fidelity == "high":
         fidelity = "10m"
-    elif fidelity not in ("110m", "10m"):
+        
+    if fidelity not in ("110m", "10m"):
         fidelity = "50m"
 
     if file_path == "dummy":
